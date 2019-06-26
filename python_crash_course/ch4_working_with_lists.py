@@ -54,10 +54,90 @@
 ##for num in nums:
 ##    print(num)
 
-squares = []
-for value in range(1,11):
-    squares.append(value**2)
-print(squares);
+##squares = []
+##for value in range(1,11):
+##    squares.append(value**2)
+##print(squares);
+##
+##
+##nums = [12, 45, 23, 8, 4, 33, 55, 98, 32]
+##maxNum = max(nums)
+##minNum = min(nums)
+##total = sum(nums)
+##print("Nums",nums)
+##print("Max Num = ",maxNum)
+##print("Min Num = ", minNum)
+##print("Total = ",total)
+##
+##
+##names = ["bob", "tom", "kelly", "peter", "david"]
+##maxName = max(names)
+##minName = min(names)
+##print(maxName)
+##print(minName)
+##
+##'''The following gives an error'''
+###sumName = sum(names)
 
-    
+'''SLICING LISTS'''
+##players = ["charles", "martina", "michael", "florence", "eli"]
+##print(players)
+## 
+##slicedPlayers = players[0:3]
+##print(slicedPlayers)
+##print()
+##colors = ["red", "green", "blue", "orange", "pink", "olive", "brown", "yellow"]
+##print(colors)
+##print()
+##print(len(colors))
+##
+##fromColors = colors[1:6]
+##print(fromColors)
+##
+##fromColors = colors[:4]
+##print(fromColors)
+##
+##fromColors = colors[:]
+##print(fromColors)
+##
+##fromColors = colors[-3:]
+##print(fromColors)
 
+engClubs = ["manchester city", "liverpool", "chelsea", "tottenham hotspur", "arsenal"]
+engClubs.append("Manchester United")
+engClubs.append("Wolverhampton Wandereres")
+engClubs.append("Everton")
+engClubs.append("Leicester City")
+engClubs.append("West Ham United")
+#print(engClubs)
+
+top = 4
+print("Here are the top "+str(top)+" EPL club(s)")
+i = 0;
+for club in engClubs[:top]:
+    print(str(i+1)+".",club.title())
+    i = i+1
+
+'''COPYING LISTS'''
+
+myMovies = ["iron man", "super man", "spider man"]
+friendMovies = myMovies[:]
+friendMovies.append("bat man")
+friendMovies.append("cat women")
+
+print("My Movies:",myMovies)
+print("My Friend's Movies:",friendMovies)
+
+
+newPapers = ["the guardian", "bbc", "the independent", "the sun", "times"]
+
+favLang = ["python", "java", "c#"]
+tomFavLang = favLang[:]
+
+tomFavLang.append("c")
+tomFavLang.append("c++")
+tomFavLang.append("delphi")
+
+msg = "favorite programming languages:"
+print("My "+msg, favLang)
+print("Tom's "+msg, tomFavLang)
