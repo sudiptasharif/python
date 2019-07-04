@@ -90,39 +90,73 @@
 ##    print(color, " is in  the list. I don't beleive it.")
 ##    print("it's amazing")
 
-age = 25
+##age = 25
+##
+##if age < 4:
+##    price = 0
+##elif age < 18:
+##    price = 5
+##elif age < 65:
+##    price = 10
+##elif age >= 65:
+##    price = 5
+##
+##print("Your admission cost is $"+str(price)+".")
 
-if age < 4:
-    price = 0
-elif age < 18:
-    price = 5
-elif age < 65:
-    price = 10
-elif age >= 65:
-    price = 5
+##requested_toppings = ["mushrooms", "extra cheese", "pineapple"]
+##
+##if "mushrooms" in requested_toppings:
+##    print("adding mushrooms")
+##if "chicken" in requested_toppings:
+##    print("adding chicken")
+##if "beef" in requested_toppings:
+##    print("adding beef")
+##if "pineapple" in requested_toppings:
+##    print("adding pineapple")
+##if "extra cheese" in requested_toppings:
+##    print("adding extra cheese")
+##
+##print("\nFinished making your pizza")
 
-print("Your admission cost is $"+str(price)+".")
+##def makePizza(req_toppings):
+##    for req_topping in req_toppings:
+##        if req_topping == "green peppers":
+##            print("Sorry, we are out of green peppers right now.")
+##        else:
+##            print("Adding "+req_topping+".")
+##    print("\nFinished making your pizza")    
+##    
+##
+##req_toppings = ["mushrooms", "green peppers", "extra cheese"]
+####req_toppings = []
+##if req_toppings:
+##    makePizza(req_toppings)
+##else:
+##    print("Are you sure you want a plain pizza?")
+##
+##
+##favCars = ["bmw", "ferrari", "porche", "mazarati"]
+##favCars = []
+##if favCars:
+##    print("Your favorite cars are: ", favCars)
+##else:
+##    print("You don't have any favorite cars?")
 
-requested_toppings = ["mushrooms", "extra cheese", "pineapple"]
 
-if "mushrooms" in requested_toppings:
-    print("adding mushrooms")
-if "chicken" in requested_toppings:
-    print("adding chicken")
-if "beef" in requested_toppings:
-    print("adding beef")
-if "pineapple" in requested_toppings:
-    print("adding pineapple")
-if "extra cheese" in requested_toppings:
-    print("adding extra cheese")
+available_toppings = ["mushrooms", "olives", "green peppers", "pepperoni", "pineapple"
+                      ,"extra cheese"]
+req_toppings = ["mushrooms", "french fries", "extra cheese", "olives", "chicken"]
 
-print("\nFinished making your pizza")
+for req_topping in req_toppings:
+    if req_topping in available_toppings:
+        print("Adding "+req_topping)
+    else:
+        print("Sorry, we don't have "+req_topping+".")
+print("\nFinished making your pizza.")
 
 
-
-
-
-
+for i in range(10):
+    print(str(i))
 
 
 
