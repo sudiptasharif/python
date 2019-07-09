@@ -170,20 +170,130 @@
 ##for alien in aliens:
 ##    print(alien)
 
+##bangladesh = {
+##    "capital": "dhaka",
+##    "continent": "asia",
+##    "language": "bengali"
+##    }
+##
+##india = {
+##    "capital": "new delhi",
+##    "continent": "asia",
+##    "language": "hindi"
+##    }
+##
+##china = {
+##    "capital": "beijing",
+##    "continent": "asia",
+##    "language": "mandarin"
+##    }
+##
+##australia = {
+##    "capital":"sydney",
+##    "continent": "australia",
+##    "language": "english"
+##    }
+##
+##england = {
+##    "capital": "london",
+##    "continent": "europe",
+##    "language": "english"
+##    }
+##
+##wales = {
+##    "capital": "cardiff",
+##    "continent": "europe",
+##    "language": "welsh"
+##    }
+##
+##france = {
+##    "capital": "paris",
+##    "continent": "europe",
+##    "language": "french"
+##    }
+##
+##countries = [bangladesh, india, china, australia, england, wales, france]
+##
+##for country in countries[:2]:
+##    for key, value in country.items():
+##        print(key, value)
 
-# make an empty list for storing aliens
-aliens = []
+#make an empty list for storing aliens
+##aliens = []
+##
+### make 30 green aliens
+##for alien_number in range(30):
+##    alien = {"color":"green", "points":5, "speed":"slow"}
+##    aliens.append(alien)
+##
+####for alien in aliens[:5]:
+####    print(alien)
+####print("...")
+####
+####print("Total number of aliens: "+str(len(aliens)))
+####
+##
+##for alien in aliens[:3]:
+##    if alien["color"] == "green":
+##        alien["color"] = "yellow"
+##        alien["points"] = 10
+##        alien["speed"] = "medium"
+##    elif alien["color"] == "yellow":
+##        alien["color"] = "red"
+##        alien["points"] = 15
+##        alien["speed"] = "fast"
+##
+##for alien in aliens[:5]:
+##    print(alien)
 
-# make 30 green aliens
-for alien_number in range(30):
-    alien = {"color":"green", "points":5, "speed":"slow"}
-    aliens.append(alien)
+##pizza = {
+##    "crust":"thick",
+##    "toppings":["mushrooms", "extra cheese", "chicken", "beef"]
+##    }
+##
+##print(pizza)
+##
+##mission_impossible = {
+##    "type":"action",
+##    "actors":["tom cruise", "jon voight", "jean reno", "ving rhames", "henry czemy"],
+##    "actress":["emmanuelle beart", "vanessa redgrave", "ingebora dapkunaite"],
+##    "sequel": "mission impossible 2"
+##    }
+##
+##for actor in mission_impossible["actors"]:
+##    print(actor.title())
 
-for alien in aliens[:5]:
-    print(alien)
-print("...")
+fav_langs = {
+    "sudipta":["java", "delphi", "javascript", "python"],
+    "ridwan":["c", "c++"],
+    "silvia":["javascript", "html"],
+    "bob":["r", "matlab"],
+    "megan":["ruby", "c", "php"],
+    "kelly":["shell"],
+    "mom":[]
+    }
 
-print("Total number of aliens: "+str(len(aliens)))
+for name, langs in fav_langs.items():
+    numLangs = len(langs)
+    if(numLangs > 0):
+        if(numLangs > 1):
+            print(name.title() + "'s favorite languages are:")
+        else:
+            print(name.title() + "'s favorite language is:")
+        for lang in langs:
+            print("\t"+lang.title())
+    else:
+        print(name.title() + " does not have any favorite language.")
+        
+
+
+
+
+
+
+
+
+
 
 
 
