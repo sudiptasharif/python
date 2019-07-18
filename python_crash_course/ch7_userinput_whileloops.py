@@ -57,12 +57,12 @@
 # active = True
 #
 # while active:
-#    msg = input(prompt)
+#     msg = input(prompt)
 #
-#    if msg == 'quit':
-#        active = False
-#    else:
-#        print(msg)
+#     if msg == 'quit':
+#         active = False
+#     else:
+#         print(msg)
 #
 #
 #
