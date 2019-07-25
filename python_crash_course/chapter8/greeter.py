@@ -1,10 +1,21 @@
-def greet_user(username):
-    """Display a simple greeting."""
-    print("Hello, " + username.title())
+# def greet_user(username):
+#     """Display a simple greeting."""
+#     print("Hello, " + username.title())
+#
+#
+# greet_user("sudipta")
+# greet_user("silvia")
+# greet_user("ridwan")
+#
+# greet_user()
 
 
-greet_user("sudipta")
-greet_user("silvia")
-greet_user("ridwan")
+def greet_users(names):
+    """Print a simple greeting to each user in the list."""
+    for name in names:
+        msg = "Hello, " + name.title() + "!"
+        print(msg)
 
-greet_user()
+
+usernames = ["hannah", "ty", "margot"]
+greet_users(usernames)
