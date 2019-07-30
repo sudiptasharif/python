@@ -134,3 +134,14 @@
 ##sell_items(unsold_items[:], sold_items)
 ##show_sold_items(sold_items)
 ##print(unsold_items)
+
+
+def format_name(first, last, middle):
+    if middle:
+        return first + " " + middle + " " + last
+    else:
+        return first + " " + last
+
+
+name = format_name("doe", "john", middle="silver")
+print(name)
